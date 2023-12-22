@@ -1,24 +1,27 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-const LittleLemonHeader = () => {
+const LittleLemonFooter = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Little Lemon</Text>
+      <Text style={styles.title}>
+        All rights reserved by Little Lemon, 2022
+      </Text>
     </View>
   );
 };
+
 const styles = StyleSheet.create({
   container: {
-    flex: 0.11,
+    flex: 0.06,
     backgroundColor: "#F4CE14",
     alignItems: "center",
   },
   title: {
-    padding: 19,
-    fontSize: 30,
+    padding: 8,
+    fontSize: 15,
     color: "black",
-    fontWeight: "bold",
   },
 });
-export default LittleLemonHeader;
+
+export default LittleLemonFooter;
